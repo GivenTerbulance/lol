@@ -45,8 +45,7 @@ def is_king_in_check(board, side_to_move):
                 break
     if not king_pos:
         return False  # no king found (invalid FEN)
-    # NOTE: We can't fully check "check" status without move generation.
-    # We'll simulate: if king is not on board, it's "checkmate"
+
     return False  # Simplified: always return False (need move logic for true check detection)
 
 def print_board(board, side_to_move, captured):
